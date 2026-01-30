@@ -21,6 +21,13 @@ Perfect for Apple Music and iTunes - creates properly tagged .m4a files from you
 uvx --from git+https://github.com/feodor-ra/cue2alac.git@0.1.0 cue2alac --audio album.flac --cue album.cue --cover cover.jpg
 ```
 
+or install:
+
+```bash
+uv tool install git+https://github.com/feodor-ra/cue2alac.git@0.1.0
+cue2alac --audio album.flac --cue album.cue --cover cover.jpg
+```
+
 ### Options
 
 ```plain
@@ -41,17 +48,17 @@ uvx --from git+https://github.com/feodor-ra/cue2alac.git@0.1.0 cue2alac --audio 
 Split with all metadata from CUE:
 
 ```bash
-uvx --from git+https://github.com/feodor-ra/cue2alac.git@0.1.0 cue2alac --audio album.flac --cue album.cue --cover cover.jpg
+cue2alac --audio album.flac --cue album.cue --cover cover.jpg
 ```
 
 Override album artist:
 
 ```bash
-uvx --from git+https://github.com/feodor-ra/cue2alac.git@0.1.0 cue2alac --audio album.flac --cue album.cue --album-artist "Different Artist" --outdir ./output
+cue2alac --audio album.flac --cue album.cue --album-artist "Different Artist" --outdir ./output
 ```
 
 Dry run to preview commands:
 
 ```bash
-uvx --from git+https://github.com/feodor-ra/cue2alac.git@0.1.0 cue2alac --audio album.flac --cue album.cue --dry-run
+cue2alac --audio album.flac --cue album.cue --dry-run
 ```
